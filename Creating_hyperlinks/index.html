@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <title>Creating_hyperlinks</title>
+</head>
+
+<body>
+
+  <h1>You are here:</h1>
+  <nav>
+    <ul>
+      <li>CREATING_HYPERLINKS</li>
+      <ul>
+        <li>|-- first-dir</li>
+        <ul>
+          <li>|-- <a href="first-dir/sub-dir.html">sub-dir.html</a></li>
+        </ul>
+        <li>|-- images</li>
+        <li>|-- scripts</li>
+        <li>|-- second-dir</li>
+        <ul>
+          <li>|-- <a href="second-dir/sub-dir.html">sub-dir.html</a></li>
+        </ul>
+        <li>|-- styles</li>
+        <li>|-- <span style="background-color: yellow;">index.html</span></li>
+        <li>|-- <a href="same-dir.html">same-dir.html</a></li>
+      </ul>
+    </ul>
+  </nav>
+  <h2 id="heading">What is a hyperlink?</h2>
+  <p>
+    Hyperlinks are one of the most exciting innovations the Web has to offer.
+    They've been a feature of the Web since the beginning, and are what makes
+    the Web a web. Hyperlinks allow us to link documents to other documents or
+    resources, link to specific parts of documents, or make apps available at
+    a web address. Almost any web content can be converted to a link so that
+    when clicked or otherwise activated the web browser goes to another web
+    address (URL).
+  </p>
+  <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks"
+    title="This article shows the syntax required to make a link, and discusses link best practices.">
+    <h2>Creating hyperlinks</h2>
+  </a>
+  <p>If you hover mouse on link upper you can see a title about the link.</p>
+  <a href="https://www.flickr.com/photos/tind/4763728810">
+    <img src="images/click.jpg" width="300" alt="A text base picture: keep calm and click on" />
+  </a>
+
+
+  <h2>Document fragments</h2>
+  <p>
+    It's possible to link to a specific part of an HTML document, known as a
+    document fragment, rather than just to the top of the document. To do this
+    you first have to assign an id attribute to the element you want to link
+    to. It normally makes sense to link to a specific heading, so this would
+    look something like the following:
+  </p>
+  <p>&lt;h1 id="heading">What is a hyperlink?&lt;/h1></p>
+  <p>
+    Then to link to that specific id, you'd include it at the end of the URL,
+    preceded by a hash/pound symbol (#), for example:
+  </p>
+  <p>
+    Want to go to topic &lt;a href="#heading">What is a hyperlink?&lt;/a>.
+  </p>
+  <p>Lorem Ipsum --> <a href="same-dir.html#p4" target="_top">paragraph-4</a>.</p>
+
+  <h2>Linking to non-HTML resources — leave clear signposts</h2>
+  <ul>
+    <li>&lt;p></li>
+    <ul>
+      <li>&lt;a href="https://www.example.com/large-report.pdf"></li>
+      <ul>
+        <li>Download the sales report (PDF, 10MB)</li>
+      </ul>
+      <li>&lt;/a></li>
+    </ul>
+    <li>&lt;/p></li>
+  </ul>
+  <p>
+    <a href="https://www.example.com/large-report.pdf">
+      Download the sales report (PDF, 10MB)
+    </a>
+  </p>
+
+  <h2>Use the download attribute when linking to a download</h2>
+  <ul>
+    <li>
+      &lt;p>
+    </li>
+    <ul>
+      <!-- Using "_blank" for attribute target opens in new window -->
+      <li>&lt;a href="https://www.example.com/video-stream/" target="_blank"></li>
+      <ul>
+        <li> Watch the video (stream opens in separate tab, HD quality)</li>
+      </ul>
+      <li>&lt;/a></li>
+    </ul>
+    <li>
+      &lt;/p>
+    </li>
+  </ul>
+  <p>
+    <a href="images/Aurora.mp4" target="_blank">
+      Watch the video (stream opens in separate tab, SD quality)
+    </a>
+  </p>
+  <p>
+    Som ET-Credit: University of Lowa,<br>
+    Image courtesy of the Earth Science<br>
+    and Remote Sensing Unit,<br>
+    NASA Johnson Space Center<br>
+    (ISS067-E-280954-282632)
+  </p>
+
+  <h2>Use the download attribute when linking to a download</h2>
+  <p>
+    MDN: When you are linking to a resource that's to be downloaded rather than opened in the<br>
+    browser, you can use the download attribute to provide a default save filename.<br>
+    Here's an example with a download link to the latest Windows version of Firefox:
+  </p>
+  <ul>
+    <li>&lt;a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US" </li>
+    <ul>
+      <li> download="firefox-latest-64bit-installer.exe"></li>
+      <li><span style="color: purple;">Download Latest Firefox for Windows (64-bit) (English, US)</span></li>
+    </ul>
+    <li>&lt;/a></li>
+  </ul>
+  <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+    download="firefox-latest-64bit-installer.exe">
+    Download Latest Firefox for Windows (64-bit) (English, US)
+  </a>
+
+  <h2>Email links</h2>
+  <p>
+    It's possible to create links or buttons that, when clicked, open a new outgoing email<br>
+    message rather than linking to a resource or page. This is done using the &lt;a> <br>
+    element and the mailto: URL scheme.<br>
+
+    In its most basic and commonly used form, a mailto: link indicates the email address<br>
+    of the intended recipient. For example:
+  </p>
+  <p>&lt;a href="mailto:nowhere@mozilla.org">Send email to nowhere&lt;/a></p>
+  This results in a link that looks like this:<a href="mailto:nowhere@mozilla.org">Send email to nowhere</a>
+
+  <h2>Specifying details</h2>
+  <p>
+    In addition to the email address, you can provide other information. In fact, any<br>
+    standard mail header fields can be added to the mailto URL you provide. The most <br>
+    commonly used of these are "subject", "cc", and "body" (which is not a true header <br>
+    field, but allows you to specify a short content message for the new email). Each <br>
+    field and its value is specified as a query term.
+  </p>
+  <p>Here's an example that includes a cc, bcc, subject and body:</p>
+  <ul>
+    <li>&lt;a href="mailto:nowhere@mozilla.org?</li>
+    <ul>
+      <li>cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20</li>
+      <li>the%20email&body=The%20body%20of%20the%20email"></li>
+      <li><span style="color: blueviolet;">Send mail with cc, bcc, subject and body</span></li>
+    </ul>
+    <li>&lt;/a></li>
+  </ul>
+  <a
+    href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+    Send mail with cc, bcc, subject and body
+  </a>
+  <p><img src="images/mailto-result.png" alt="Result of the link upper" width="700px"></p>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+html {
+  background-color: beige;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  min-width: 300px; /* The body will be at least 300px wide */
+  max-width: 1200px; /* The body will be at most 1200px wide */
+  margin: 8px auto;
+  padding: 10px 30px;
+}
+
+ul {
+  list-style: none;
+}
