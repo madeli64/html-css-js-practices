@@ -1,0 +1,13 @@
+footer {
+    text-align: center;
+    background-color:bisque;
+    color:black;
+    border: 2px solid black;
+    height: 20px;
+    padding: 5px;
+    margin: 0 auto;    
+}
+
+p {
+    background-image: url("256px-Japanese_Wave_Pattern.svg.png");
+}
