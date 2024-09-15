@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Audio Content</title>
+</head>
+<body>
+    <!-- <video src="sample.webm" controls>
+        <p>
+          Your browser doesn't support HTML video. Here is a
+          <a href="sample.webm">link to the video</a> instead.
+        </p>
+    </video> -->
+
+    <figure>
+        <video
+         controls
+         width="426"
+         height="240"
+         muted
+         preload="metadata"
+         poster="media/German-Shepherd-Dog.png">
+            <source src="media/German-sheperd.mp4" type="video/mp4">
+            <source src="media/German-sheperd.webm" type="video/webm">
+            <track label="English" kind="subtitles" srclang="en" src="media/caption_en.vtt">
+            <p>
+                Your browser doesn't support HTML video. Here is a
+                <a href="media/German-sheperd.mp4">link to the video</a> instead.
+            </p>
+        </video>
+        <figcaption><a href="https://www.pexels.com/video/german-shepherd-chilling-on-snowy-weather-6209964/">German Shepherd Chilling On Snowy Weather</a> by <a href="https://www.pexels.com/@yankrukov/">Yan Krukau</a><br>
+            Poster designed by <a href="https://www.wannapik.com/">Wannapik</a>
+        </figcaption>
+
+    </figure>
+</body>
+</html>
