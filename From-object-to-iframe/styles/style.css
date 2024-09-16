@@ -1,0 +1,22 @@
+html {
+    background-color: grey;
+    font-family: "Open-Sans", sans-serif; /* this should be the rest of the output you got from Google Fonts */
+}
+
+body {
+    width: 100%;
+    min-width: 300px;
+    max-width: 1200px;
+    padding: 0 20px 20px 20px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: beige;
+}
+
+h1 {
+    text-align: center;
+}
+
+iframe {
+    border: 0;
+}
