@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1800" height="1200" id="flag_of_quebec"> -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1800" height="1200" viewBox="0 0 1800 1200" id="flag_of_quebec">
+<desc>Flag of Québec</desc>
+<defs>
+<g id="f">
+<rect x="-50" y="-30" height="60" width="100" fill="#28166f"/>
+<g transform="translate(0,-20)" fill="#fff">
+<path d="M -1.2116,27.8178 C -1.2116,22.1752 -2.0914,20.4715 -4.5417,13.9804 C -5.7090,10.8879 -5.0241,7.1025 -2.8585,3.6009 C -2.0824,2.3460 -1.1136,1.2135 0,0 C 1.1136,1.2135 2.0824,2.3460 2.8585,3.6009 C 5.0241,7.1025 5.7090,10.8879 4.5417,13.9804 C 2.0914,20.4715 1.2116,22.1752 1.2116,27.8178 z"/>
+<path d="M 2.9221,27.6725 C 2.9221,21.7209 5.2387,17.8293 8.5007,16.6604 C 9.9492,16.1414 11.8076,16.3869 13.5193,18.1070 C 15.6379,20.2360 16.2551,26.1004 10.0355,27.2283 C 10.6938,26.2724 10.6546,24.1467 9.3215,23.4409 C 8.3311,22.9165 7.2090,23.1877 6.6462,23.5643 C 5.8225,24.1156 4.9171,25.6702 4.9672,27.6725 z" id="rwi"/>
+<path d="M 1.7773,30.1835 C 1.7899,32.1913 2.7952,33.5181 4.5165,34.257 C 4.2948,34.9549 3.2566,36.3776 1.8314,36.2812 C 1.5499,37.7870 1.2822,38.6324 0,40 C -1.2822,38.6324 -1.5499,37.7870 -1.8314,36.2812 C -3.2566,36.3776 -4.2948,34.9549 -4.5165,34.257 C -2.7952,33.5181 -1.7899,32.1913 -1.7773,30.1835 z"/>
+<use xlink:href="#rwi" transform="scale(-1,1)"/>
+<rect height="3.218" width="15.846" x="-7.923" y="27.33077"/>
+</g>
+</g>
+</defs>
+<g transform="scale(7.5)">
+<rect height="160" width="240" fill="#fff"/>
+<use xlink:href="#f" transform="translate(50,30)"/>
+<use xlink:href="#f" transform="translate(190,30)"/>
+<use xlink:href="#f" transform="translate(50,130)"/>
+<use xlink:href="#f" transform="translate(190,130)"/>
+</g>
+<text x="650" y="630" style="font: italic 80px serif; fill: red;">I Love Quebec</text>
+</svg>

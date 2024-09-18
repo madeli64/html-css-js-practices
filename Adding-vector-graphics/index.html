@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="madeli64" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Adding vector graphics to the web</h1>
+    </header>
+    <main>
+      <article>
+        <p>
+          <svg
+            version="1.1"
+            baseProfile="full"
+            width="300"
+            height="200"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="100%" height="100%" fill="black" />
+            <circle cx="150" cy="100" r="90" stroke="red" stroke-width="20" fill="white"/>
+            <line x1="90" y1="35" x2="220" y2="165" stroke="red" stroke-width="20"/>
+          </svg>
+        </p>
+        <p>
+          <img src="images/Flag-of-Quebec.png" 
+              alt="Flag Of Quebec"
+              width="700"
+              height="auto"
+              srcset="images/Flag-of-Quebec.svg">
+        </p>
+        <object id="svg-object" data="images/Flag-of-Quebec.svg" type="image/svg+xml">
+          <!-- Fallback content -->
+          <!-- If the browser couldn't upload svg file try to load img -->
+          <img src="images/Flag-of-Quebec.png" 
+              alt="Flag of Quebec"
+              width="700"
+              height="auto">
+        </object>
+        <p>
+          <figure>
+            <svg versio="1.1"
+            xmlns="https://www.w3.org/2000/svg" 
+            width="640"
+            height="428">
+              <image x="0" y="0" width="640" height="428" href="images/quebec-city.jpg" alt="A square in Quebec city"/>
+              <text x="100" y="400" style="font-size: 40px; fill: black;">I put a text on top of jpg</text>
+            </svg>
+            <figcaption>Image by <a href="https://pixabay.com/users/dezalb-1045091/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1037182">DEZALB</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1037182">Pixabay</a></figcaption>
+          </figure>
+        </p>
+      </article>
+    </main>
+    <footer>
+        <strong>Made with <span style="color: red;">&hearts;</span> in Montreal, Quebec 2024</strong>
+    </footer>
+  </body>
+</html>
