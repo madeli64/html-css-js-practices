@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Responsive Images</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <h1>Responsive Images</h1>
+            <h2>Beautiful Tree</h2>
+            <p>
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Enim rhoncus facilisi in, netus est efficitur pretium. 
+                Sollicitudin nisl fermentum sagittis condimentum sem porta class varius. Leo et ridiculus ac vehicula quam mattis. 
+                Diam malesuada facilisi facilisis accumsan nostra; tempus nunc. Parturient nostra suspendisse; 
+                purus montes ultricies vulputate. Platea pulvinar consequat mus gravida donec magna consectetur. 
+                Lobortis duis suscipit viverra magnis euismod malesuada eu pellentesque nascetur. 
+                Finibus a parturient urna eros sapien varius montes.
+            </p>
+            <img src="images/tree-40.jpg"
+                srcset="images/tree-40.jpg 1402w, images/tree-60.jpg 2104w, images/tree-100.jpg 3506w"
+                sizes="(max-width: 375px) 100vw, 100vw" 
+                alt="A green tree in front of a masion">
+
+            <h2>Parc de Montreal</h2>
+            <p>
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse eleifend habitasse cubilia congue sed neque congue ante. 
+                Sapien bibendum morbi senectus laoreet interdum. Convallis habitasse curae eros ut iaculis. 
+                Cras torquent hendrerit ligula pharetra volutpat mi dictum. Suspendisse ante nibh porttitor consequat vitae. 
+                Enim egestas porta nisl facilisi sociosqu lorem magna semper nascetur.            
+            </p>
+            <picture>
+                <source media="(max-width: 799px)" srcset="images/me-and-wife-crop.jpg" type="image/jpg">
+                <source media="(min-width: 800px)" srcset="images/me-and-wife.jpg" type="image/jpg">
+                <img src="images/me-and-wife.jpg" alt="me and wife in Parc de Montreal">
+            </picture>
+        </section>
+    </main>
+    <footer>Made with <span style="color: red;">&hearts;</span> in Montreal, Quebec 2024</footer>
+</body>
+</html>

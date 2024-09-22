@@ -1,0 +1,40 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: gray;
+}
+
+header {    
+    background: url(../images/header.jpg) no-repeat center;
+    background-size: cover;
+    height: 200px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    flex: 1;
+}
+
+section {
+    padding: 20px;
+}
+
+img {
+    display: block;
+    margin:0 auto;
+    max-width: 100%;
+    height: auto; 
+}
+
+
+footer {
+    text-align: center;
+    background-color: lightgrey;
+    padding: 5px;
+}
