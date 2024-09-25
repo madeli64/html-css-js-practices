@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Table template</title>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>HTML Tables Assessment</h1>
+
+    <table>
+        <thead>
+            <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
+            <colgroup>
+                <col span="2">
+                <col style="border: 2px solid black;">
+                <col span="9">
+            </colgroup>
+            <tr>
+                <td colspan="2">&nbsp;</td>
+                <th id="name">Name</th>
+                <th id="mass">Mass (10<sup>24</sup>kg)</th>
+                <th id="diameter">Diameter (km)</th>
+                <th id="density">Density (kg/m<sup>3</sup>)</th>
+                <th id="gravity">Gravity (m/s<sup>2</sup>)</th>
+                <th id="lod">Length of day (hours)</th>
+                <th id="dfs">Distance from Sun (10<sup>6</sup>km)</th>
+                <th id="temp">Mean temperature (°C)</th>
+                <th id="nom">Number of moons</th>
+                <th id="note">Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="terrestrial" scope="row" rowspan="4" colspan="2">Terrestrial planets</th>
+                <th headers="terrestrial name">Mercury</th>
+                <td headers="terrestrial mass">0.330</td>
+                <td headers="terrestrial diameter">4,879</td>
+                <td headers="terrestrial density">5427</td>
+                <td headers="terrestrial gravity">3.7</td>
+                <td headers="terrestrial lod">4222.6</td>
+                <td headers="terrestrial dfs">57.9</td>
+                <td headers="terrestrial temp">167</td>
+                <td headers="terrestrial nom">0</td>
+                <td headers="terrestrial note">Closest to the Sun</td>
+            </tr>
+                <th headers="terrestrial name">Venus</th> 
+                <td headers="terrestrial mass">4.87</td>
+                <td headers="terrestrial diameter">12,104</td>
+                <td headers="terrestrial density">5243</td>
+                <td headers="terrestrial gravity">8.9</td>
+                <td headers="terrestrial lod">2802.0</td>
+                <td headers="terrestrial dfs">108.2</td>
+                <td headers="terrestrial temp">464</td>
+                <td headers="terrestrial nom">0</td>
+                <td headers="terrestrial note">&nbsp;</td>
+            </tr>
+            <tr>
+                <th headers="terrestrial name">Earth</th> 
+                <td headers="terrestrial mass">5.97</td>
+                <td headers="terrestrial diameter">12,756</td>
+                <td headers="terrestrial density">5514</td>
+                <td headers="terrestrial gravity">9.8</td>
+                <td headers="terrestrial lod">24.0</td>
+                <td headers="terrestrial dfs">149.6</td>
+                <td headers="terrestrial temp">15</td>
+                <td headers="terrestrial nom">1</td>
+                <td headers="terrestrial note">Our world</td>
+            </tr>
+            <tr>
+                <th headers="terrestrial name">Mars</th>
+                <td headers="terrestrial mass">0.642</td>
+                <td headers="terrestrial diameter">6,792</td>
+                <td headers="terrestrial density">3933</td>
+                <td headers="terrestrial gravity">3.7</td>
+                <td headers="terrestrial lod">24.7</td>
+                <td headers="terrestrial dfs">227.9</td>
+                <td headers="terrestrial temp">-65</td>
+                <td headers="terrestrial nom">2</td>
+                <td headers="terrestrial note">The red planet</td>
+            </tr>
+            <tr>
+                <th id="jovian" scope="colgroup" rowspan="4">Jovian planets</th>
+                <th id="gas" headers="jovian" scope="row" rowspan="2">Gas giants</th>
+                <th headers="jovian gas name">Jupiter</th>
+                <td headers="jovian gas mass">1898</td>
+                <td headers="jovian gas diameter">142,984</td>
+                <td headers="jovian gas density">1326</td>
+                <td headers="jovian gas gravity">23.1</td>
+                <td headers="jovian gas lod">9.9</td>
+                <td headers="jovian gas dfs">778.6</td>
+                <td headers="jovian gas temp">-110</td>
+                <td headers="jovian gas nom">67</td>
+                <td headers="jovian gas note">The largest planet</td>
+            </tr>
+            <tr>
+                <th headers="jovian gas name">Saturn </th>
+                <td headers="jovian gas mass">568 </td>
+                <td headers="jovian gas diameter">120,536 </td>
+                <td headers="jovian gas density">687 </td>
+                <td headers="jovian gas gravity">9.0 </td>
+                <td headers="jovian gas lod">10.7 </td>
+                <td headers="jovian gas dfs">1433.5 </td>
+                <td headers="jovian gas temp">-140 </td>
+                <td headers="jovian gas nom">62</td>
+                <td headers="jovian gas note">&nbsp;</td>
+            </tr>
+
+            <tr>
+                <th id="ice" headers="jovian" scope="row" rowspan="2">Ice giants</th>
+                <th headers="jovian ice name">Uranus</th>
+                <td headers="jovian ice mass">86.8 </td>
+                <td headers="jovian ice diameter">51,118 </td>
+                <td headers="jovian ice density">1271 </td>
+                <td headers="jovian ice gravity">8.7 </td>
+                <td headers="jovian ice lod">17.2 </td>
+                <td headers="jovian ice dfs">2872.5 </td>
+                <td headers="jovian ice temp">-195 </td>
+                <td headers="jovian ice nom">27</td>
+                <td headers="jovian ice note">&nbsp;</td>
+            </tr>    
+            <tr>
+                <th headers="jovian ice name">Neptune</th>
+                <td headers="jovian ice mass">102 </td>
+                <td headers="jovian ice diameter">49,528 </td>
+                <td headers="jovian ice density">1638 </td>
+                <td headers="jovian ice gravity">11.0 </td>
+                <td headers="jovian ice lod">16.1 </td>
+                <td headers="jovian ice dfs">4495.1 </td>
+                <td headers="jovian ice temp">-200 </td>
+                <td headers="jovian ice nom">14</td>
+                <td headers="jovian ice note">&nbsp;</td>
+            </tr>
+            <tr>
+                <th id="dwarf" scope="row" colspan="2">Dwarf planets</th>
+                <th headers="dwarf name">Pluto</th>
+                <td headers="dwarf mass">0.0146 </td>
+                <td headers="dwarf diameter">2,370 </td>
+                <td headers="dwarf density">2095 </td>
+                <td headers="dwarf gravity">0.7 </td>
+                <td headers="dwarf lod">153.3 </td>
+                <td headers="dwarf dfs">5906.4 </td>
+                <td headers="dwarf temp">-225 </td>
+                <td headers="dwarf nom">5 </td>
+                <td headers="dwarf note">Declassified as a planet in 2006, but this <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
+            </tr>
+        </tbody>
+    </table>    
+    <footer>
+        <strong><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Structuring_planet_data">Structuring planet data </a></strong>
+        by <a href="https://developer.mozilla.org/en-US/docs/MDN/Community/Roles_teams#contributor">Mozilla Contributors</a> 
+        is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.5/">CC-BY-SA 2.5</a>
+      </footer>
+  </body>
+</html>
