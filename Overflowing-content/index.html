@@ -8,6 +8,7 @@
             display: flex;
         }
         .wrapper {
+            width: 210px;
             margin: 10px;
         }
         .box {
@@ -22,6 +23,9 @@
         }
         .overflow-hidden {
             overflow: hidden;
+        }
+        .overflow-scroll {
+            overflow: scroll;
         }
     </style>
 </head>
@@ -42,10 +46,16 @@
                 This box has a height and a width. This means that if there is too much content to be displayed within the assigned height, 
                 there will be an overflow situation. If overflow is set to hidden then any overflow will not be visible.
             </div>
-            <p>This content is outside of the box.</p>
+            <p>This content is inside of the box.</p>
+        </div>
+        <div class="wrapper">
+            <div class="box overflow-scroll">
+                This box has a height and a width. This means that if there is too much content to be displayed within the assigned height, 
+                there will be an overflow situation. If overflow is set to hidden then any overflow will not be visible.
+            </div>
+            <p>This content is inside of the box with scrollbar.</p>
         </div>
         <div class="word">Overflow</div>
-
     </section>
 </body>
 </html>
