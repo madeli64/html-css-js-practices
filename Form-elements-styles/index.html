@@ -38,6 +38,23 @@
             background-color: #333;
         } 
 
+        /* Form Reset Setting */
+        button,
+        input,
+        select, 
+        textarea {
+        /* In some browsers, form elements do not inherit font styling by default */
+            font-family: inherit;
+            font-size: 100%;
+        /* For consistency, it is a good idea to set margins and padding to 0 on all elements, 
+        then add these back in when styling particular controls */
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        /* set overflow: auto on <textarea>s to stop IE 
+        showing a scrollbar when there is no need for one: */
+            overflow: auto;    
+        }
     </style>
 </head>
 <body>
