@@ -5,3 +5,6 @@ Adding style to tables make them looks better!
 
 ## Table picture with some basic styles
 ![alt text](image.png)
+
+## Table picture after styling
+![alt text](image-2.png)
