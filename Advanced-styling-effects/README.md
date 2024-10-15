@@ -14,3 +14,6 @@
 
 ## Filter Drop-Shadow vs Box-Shadow
 ![alt text](image-4.png)
+
+## How to shape text around an image?
+![alt text](image-5.png)

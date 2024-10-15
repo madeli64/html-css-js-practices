@@ -1,3 +1,7 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .wrapper {
     display: flex;
 }
@@ -100,6 +104,15 @@ img {
     margin: 20px;
 }
 
+.box.large {
+    width: 543px;
+    height: 408px;
+    border: 5px solid black;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(39, 118, 209);
+}
+
 /* <filter-function> values */
 .blur {
     filter: blur(5px);
@@ -155,4 +168,11 @@ p.filter {
 
 p.shadow {
     box-shadow: 10px 10px 1px rgb(0 0 0 / 70%);
+}
+
+img[class="circle"] {
+    float: left;
+    shape-outside: circle(33.11% at 9.00rem 59.46%);
+    width: 543px;
+    height: 408px;
 }
