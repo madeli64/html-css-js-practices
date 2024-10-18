@@ -40,6 +40,14 @@
   
   /* Your CSS below here */
 
+  h1 {
+    background-image: url('logo.png');
+    /* filter: drop-shadow(5px 3px 2px rgba(0,0,0,0.8)); */
+    border-radius: 50%; /* make the box to a circle */
+    box-shadow: 5px 3px 2px rgba(0,0,0,0.8); 
+  }
+
+  
   article {
     /* white is the fallback color that will be shown if linear-gradient() doesn't support by browser */
     background-color: white; 
