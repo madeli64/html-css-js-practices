@@ -1,0 +1,27 @@
+html {
+    font-family: sans-serif;
+  }
+  
+  /* Your CSS below here */
+
+  div {
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    width: 200px; /* Reasonable width for a large box */
+    height: 150px; /* Reasonable height for a large box */
+    margin: 0 auto; /* Center the box horizontally */
+    border-radius: 8px; /* Subtle border radius */
+    border: 1px solid rgb(170, 0, 0); /* Slightly darker shade for the border */
+
+    font-size: 1.125rem; /* Computed to about 18px (16px * 1.125 = 18px). Slightly larger for readability */
+    color: white; /* Contrasting color for the text */
+    line-height: 150px; /* Center the text vertically within the box */
+    text-align: center; /* Center the text within the box */
+    text-shadow: 1px 1px 1px rgb(0, 0, 0); /* Black text shadow */
+  
+    background-color: red; /* Base color for the design */
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%);
+    box-shadow: 
+      3px 3px 3px rgb(0, 0, 0), /* Standard box shadow to make the box look slightly raised */
+      inset 2px 2px 3px rgba(255, 255, 255, 0.5), /* Semi-transparent white shadow near the top left */
+      inset -2px -2px 3px rgba(0, 0, 0, 0.5); /* Semi-transparent black shadow near the bottom right */
+  }
