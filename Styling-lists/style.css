@@ -1,0 +1,49 @@
+/* General styles */
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+ul,
+ol,
+dl,
+p {
+    font-size: 1.5rem;
+}
+
+li,
+p {
+    line-height: 1.5;
+}
+
+/* Description list styles */
+
+dd,
+dt {
+    line-height: 1.5;
+}
+
+dt {
+    font-weight: bold;
+}  
+
+ul {
+    padding-left: 2rem;
+    /* list-style: none;
+    list-style-position: inside; */
+    list-style: square url(fleur-de-lys-16.svg) inside; /* it's a shorthand and type is a fallback for image*/
+}
+
+/* Alternative way for list-style-image with more settings */
+/* ul li {
+    padding-left: 2rem;
+    background-image: url(fleur-de-lys-16.svg), linear-gradient(to top, rgba(180, 180, 0, 0.2) 0%, rgb(255, 255, 0) 100%);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+} */
