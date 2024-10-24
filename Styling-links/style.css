@@ -1,0 +1,95 @@
+:root {
+    --back-color-normal: rgba(170, 170, 170, 0.5);
+    --back-color-focused: rgba(170, 170, 170, 0.8);
+  }
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    justify-items: center; /* Horizontaly center the nav */
+}
+
+nav {
+    height: 30px;
+}
+
+nav ul {
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Default styles
+
+1- Links are underlined.
+2- Unvisited links are blue.
+3- Visited links are purple.
+4- Hovering a link makes the mouse pointer change to a little hand icon.
+5- Focused links have an outline around them — you should be able to focus 
+   on the links on this page with the keyboard by pressing the tab key.
+6- Active links are red. Try holding down the mouse button on the link as you click it. 
+
+# Oreders of css of <a> element and pseudo-classes:
+    1- a {}
+    2- a:link {}
+    3- a:visited {}
+    4- a:focus {}
+    5- a:hover {}
+    6- a:active {} 
+
+    To remember the order, you could try using a mnemonic like "LoVe Fears HAte".
+*/
+
+
+nav a {
+    display: block; /* to spread click action to the all parent container (li) */
+    text-decoration: none; /* for removing underline */
+    background-color: var(--back-color-normal);
+    padding: 5px;
+    border-radius: 5px; /* curve corner */
+}
+
+nav a:focus {
+    outline-style: none
+}
+
+nav a:hover {
+    background-color: var(--back-color-focused);
+    transition-property: padding, text-shadow, box-shadow; 
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s; 
+    padding: 7px 5px;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7); 
+    box-shadow: 
+        inset 0 0 0 2px cadetblue,
+        0 1px2px 1px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    width: 600px;
+    justify-self: center; /* Horizontaly center the main in body */
+    justify-items: center; /* for <p> element */
+}
+
+main a::before {
+    content: "#"; /* it's for adding any content before icon */
+    display: inline-block;
+    font-size: 0.8em;
+    color: gray;
+}
+
+main a[href^="http"]::after {
+    content: ""; /* it's for adding any content before icon */
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: 0.25em;
+  
+    background-size: 100%;
+    background-image: url("external-link-52.png");
+}
