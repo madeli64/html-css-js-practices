@@ -1,0 +1,20 @@
+body {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  p {
+    background: rgba(84, 218, 255, 0.3);
+    border: 2px solid rgba(101, 255, 84, 0.629);
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  span {
+    background: khaki;
+    border: 1px solid black;
+  }
+  
+  img {
+    width: 400px;
+  }
