@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Layered Interface</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+
+  <div id="container" class="top">
+    <div id="layer-1" class="back">
+      <h2>layer-1</h2>
+    </div>
+    <div id="layer-2" class="middle">
+      <h2>layer-2</h2>
+    </div>
+    <div id="layer-3" class="front">
+      <h2>layer-3</h2>
+    </div>
+  </div>
+  <div class="bottom">
+    <button id="btn-1">Layer 1</button>
+    <button id="btn-2">Layer 2</button>
+    <button id="btn-3">Layer 3</button>
+    <div class="volume-controls">
+      <div>
+        <label for="h-volume">H-Origin</label>
+        <input id="h-volume" type="range" min="-200" max="200" value="50" data-units="%">
+      </div>
+      <div>
+        <label for="v-volume">V-Origin</label>
+        <input id="v-volume" type="range" min="-200" max="200" value="50" data-units="%">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

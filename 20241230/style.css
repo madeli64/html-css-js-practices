@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top {
+    position: relative;
+    perspective: 1000px; /* Adjust the perspective value for the desired effect */
+    perspective-origin: 50% 50%; /* Set perspective origin point of view*/
+    background-color: #f0f0f0;
+    height: 80%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.bottom {
+    height: 20%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.top div {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    border-radius: 10px;
+    text-align: center;
+    transform-style: preserve-3d; /* Preserve the 3D transformation for child elements */
+    transition: transform 1s, z-index 1s, font-size 0.5s ; /* Add a smooth transition effect */  
+    box-shadow: 0 -9px 5px 2px rgba(0, 0, 0, 0.5);
+    opacity: 0.7;
+}
+
+#layer-1 {
+    background-color: #ddddff;
+}
+#layer-2 {
+    background-color: #ffdddd;
+}
+#layer-3 {
+    background-color: #ccffcc;
+
+}
+
+.top div::after {
+    content: "Layer";
+    position: absolute;
+    top: -20px;
+    left: 25px;
+    width: 70px;
+    height: 10px;
+    background-color: inherit;
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 -9px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.back {
+    font-size: small;
+    transform: translateZ(-100px); /* Bring the front wall closer */
+    z-index: 100;  
+}
+
+.middle {
+    font-size: medium;
+    transform: translateZ(-50px); /* Bring the front wall closer */
+    z-index: 200;  
+}
+
+.front {
+    font-size: large;
+    transform: translateZ(0px); /* Bring the front wall closer */
+    z-index: 300;  
+}
+
+.bottom button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0e68c;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.bottom button:hover {
+    background-color: #deb887;
+    transform: scale(1.1);
+}
+
+.bottom button:active {
+    transform: scale(1);
+}
+
+.volume-controls {
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+    gap: 10px;
+}
